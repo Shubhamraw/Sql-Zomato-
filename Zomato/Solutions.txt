@@ -1,0 +1,40 @@
+show databases;
+use zomato;
+show tables;
+
+SELECT * FROM users;
+SELECT * FROM order_history;
+SELECT * FROM delivery_boy;
+SELECT * FROM delivery_history;
+SELECT * FROM restaurants;
+SELECT * FROM restaurants_menu;
+
+
+
+
+#1
+
+SELECT count(DISTINCT uname) FROM users;
+
+
+#2
+SELECT * FROM delivery_boy;       #help me to insert data into avg_rating and avg_time column of delivery_boy  
+                                                                from this  "SELECT did,AVG(deliver_time),AVG(customer_rated) FROM delivery_history group by did;"
+
+
+
+#3
+SELECT uid, count(*)  FROM order_history GROUP BY uid HAVING count(*) >10;
+SELECT * FROM users WHERE uid = 2;                                                                                          #help me to connect these two statement they have uid in common
+
+
+#4
+
+
+
+
+
+#5
+SELECT uid,rid FROM order_history GROUP BY rid having count(*)>3 ;
+
+SELECT uname FROM users                                   # connect these two statement. i need uname from statement 1 condition they have uid in common

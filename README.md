@@ -4,7 +4,7 @@ Built a dummy database with 6 tables and solving related sql queries
 
 Data analysis
 
-Build a dummy database for Zomato with multiple tables using mysql and applying some queries such as :
+Build a dummy database for Zomato with multiple tables using mysql Workbench and applying some queries such as :
 
 	ex 1. SQL query to find the number of Zomato users
 
